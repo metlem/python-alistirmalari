@@ -1,0 +1,187 @@
+#Python çalışma kodları
+# Kaynak=www.istihza.com
+
+
+
+
+#yas =18
+#print(" Programa hoşgeldiniz!Bu programı kullanabilmeniz için çömez olamamk gerekir.O yüzden en az 17 yaşında olmalısınız.")
+#print("Yasiniz: ", yas)
+
+#YAŞ SORGULAMA
+
+
+"""print("Selamün Aleyküm Kanki!! Yaş kaç? En az 18 yasında olman lazım :)")
+print("Lutfen yasını girer misin kanki?\n")
+yas=int(input("Yasiniz: \t"))
+if yas>18:
+	print("Önden buyur kanki!! :)")
+else :
+	print("Yaşın tutmuyor kanki!! Hadi sana bay bay!! Teyzengillere selam ;)")
+"""
+
+#----------------------------------------------------
+
+#İF İLE E.POSTA
+
+"""print("Dünyanin en guzel en havali en coool e.posta hizmetine hosgeldiniz!!Sisteme giris yaptıktan sonra takilabilirsiniz.")
+parola=input("Parola: ")
+if parola=="12345678":
+	print("Sisteme hosbuldun gardas!!")
+else:
+	print("YANLIŞ PAROLA")"""
+
+#----------------------------------------------------
+
+#İF VE ELİF İLE YAŞ SORGUSU
+
+
+"""yaş=int(input("Yaşınız: "))
+if yaş==18:
+	print("18 yaş çok tatlı bir yaş")
+elif yaş<0:
+	print("Yav he he :)")
+elif yaş>18:
+	print("Büyümeye başlamışsın")
+"""
+
+#----------------------------------------------------
+
+#İF VE ELİF İLE SAYI OYUNU
+
+"""a=int(input("Bir sayi giriniz: "))
+if a<100:
+	print("verdiğiniz sayi 100'den kucuktur")
+elif a<50:
+	print("verdiğiniz sayi 50'den buyuktur")
+elif a==100:
+	print("verdiğiniz sayi 100'esittir")
+elif a>100:
+	print("verdiğiniz sayi 100'den buyuktur")
+elif a>150:
+	print("verdiğiniz sayi 150'den buyuktur")"""
+
+#----------------------------------------------------
+
+#İF ELİF ELSE İLE INGILIZCE SOZLUK
+
+"""word=input("Put the word: ")
+if word=="elma":
+	print("apple")
+elif word=="karpuz":
+	print("melon")
+else:
+	print("I had not being this word")
+"""
+#----------------------------------------------------
+
+#İF ELİF ELSE İLE PROGRAMDAN ÇIKMA SORGUSU
+
+"""soru=input("Programdan çıkmak istediğinize emin misiniz? Eminseniz evet değilseniz hayır yazın: ")
+if soru =="evet":
+	print("Güle güle!!")
+elif soru=="hayır":
+	print("Program çalışmaya devam ediyor...")
+else :
+	print("Lütfen evet ya da hayır yazın!!")
+"""
+#----------------------------------------------------
+
+#format() FONKSİYONU
+
+"""#Önecelikle kullanıcıdan bir internet adresi girmesini istiyoruz.
+url=input("Lütfen ulaşmak istediğiniz internet adrsini giriniz!!")
+#"format() kullanmadan" Kaçış dizileriyle bu iş aşağıdaki gibi çözülür
+#print("İnternet",url,"adında bir internet adresi bulunamadı!!")
+
+print("İnternet {} adında bir internet adresi bulunamadı!!".format(url))"""
+
+#......
+
+
+"""print("{}  {} iyi gider".format("Pilav üstü","Nohut"))"""
+
+
+#......
+
+
+
+#dilekçe="""
+#
+#										Tarih: {}
+#T.C.
+#{}Üniversitesi
+#{}Fakültesi
+
+#Fakulteniz {} Bölümü {} numaralı öğrencisiyim.ekte sunduğum 
+#belgede belirtilen mazeretim gereğince {} Eğitim-Öğretim Yılı {}.
+#yarıyılında öğrenime ara izni (kayıt dondurma) istiyorum.
+#	Bilgilerini arz ederim.
+
+#	İmza
+
+#Ad 		:{}
+#Soyad	:{}
+#T.C No  :{}
+#Adres   :{}
+#Tel     :{}
+#Ekler   :{}
+#"""
+
+#tarih       =input("tarih: ")
+#üniversite  =input("Üniversite Adı: ")
+#fakülte     =input("Fakulte Adı: ")
+#bölüm       =input("Bölüm Adı: ")
+#öğrenci_no  =input("Öğrenci No: ")
+#öğretim_yılı=input("Öğretim Yılı: ")
+#yarıyıl     =input("Yarıyıl: ")
+#ad          =input("Ad: ")
+#soyad       =input("Soyad: ")
+#tc_no      =input("T.c. No: ")
+#adres       =input("Adres: ")
+#tel         =input("Tel: ")
+#ekler       = input("Ekler: ")
+
+#print(dilekçe.format(tarih,üniversite,fakülte,bölüm,öğrenci_no,öğretim_yılı,yarıyıl,ad,soyad,tc_no,adres,tel,ekler))
+
+
+#.....
+"""
+url=input("url girin")
+hata_taslağı="{} Böyle bir url yok! "
+print(hata_taslağı.format(url))"""
+
+
+#----------------------------------------------------
+
+#if ile format() kullanımı
+
+"""kullanıcı_adı=input("Kullanıcı Adınız: ")
+parola=input("Parolanız: ")
+
+toplam_uzunluk=len(kullanıcı_adı)+len(parola)
+
+mesaj="Kullanıcı adı ve parolanız toplam {} karakterden oluşuyor!"
+print(mesaj.format(toplam_uzunluk))
+
+if toplam_uzunluk>40:
+	print("Kullanıcı adınız ile parolanızın toplam uzunluğu 40 karakteri geçmemeli!")
+else:
+	print("Sisteme hoşgeldiniz!")"""
+
+#----------------------------------------------------
+
+#Yıl sonu ortalama hesabı
+
+"""final=int(input("Final notunu giriniz:  "))
+vize1=int(input("Vize1 notunu giriniz: "))
+vize2=int(input("Vize2 notunu giriniz: "))
+yıl_sonu_ort=int(final/2+vize1/4+vize2/4)
+
+acıklama="Yıl sonu ortalamanınız {} olarak hesaplanmıştır"
+print(acıklama.format(yıl_sonu_ort))
+
+if yıl_sonu_ort>50:
+	print("Sınıfı geçtiniz")
+else:
+	print("Bu dersten kaldınız!!")"""
