@@ -1,0 +1,176 @@
+#Python Alıştırmaları -2- 
+#kaynak www.istihza.com
+
+
+#% Kulanımı(Modülüs)
+"""sayı= int(input("Bir sayı girin: "))
+if sayı %2==0:
+	print("Girdiğiniz sayı bir çift sayıdır.")
+else:
+	print("Girdiğiniz sayı bir tek sayıdır.")"""
+
+#...
+
+"""bölünen=int(input("Bir sayı girin: "))
+bölen=int(input("Bir sayı daha girin: "))
+
+şablon="{} sayısı {} sayısına tam".format(bölünen,bölen)
+
+if bölünen% bölen ==0:
+	print(şablon,"bölünüyor!")
+else:
+	print(şablon,"bölünmüyor!")"""
+
+#--------------------------------------------------
+#Karşılaştırma İşleçleri
+
+"""parola="abc123"
+soru=input("parola lütfen: ")
+
+if soru==parola:
+	print("doğru parola!!")
+elif soru !=parola:
+	print("yanlış parola!!")"""
+
+#....
+
+"""sayı=input("sayı: ")
+
+if int(sayı) <=100:
+	print("sayı 100 veya 100'den küçük")
+elif int(sayı) >=100:
+	print("sayı 100 veya 100'den büyük")"""
+
+#....
+
+#Akıldan sayı tutma oyunu
+"""input("Aklından 1-10 arasında bir sayı tut")
+input("Bu sayıyı 2'ye böl")
+input("Bu sayıyı 10 ile çarp")
+input("Bu sayıyı 5'e böl")
+input("Bu sayıyı 2 ile çarp")
+sonuc=int(input("Sonucu buraya yazın: "))
+islem=int(sonuc/2)
+print("Aklınızdan tuttuğunuz sayı: ",islem)"""
+
+#.....
+"""isim= input("İsminiz: ")
+if isim== "meltem":
+	print(isim, "ne güzel bir isim")
+else:
+	print(isim,"ismini pek sevmem!")"""
+
+#.....
+"""kullanıcı=input("Kullancı adınız: ")
+if bool(kullanıcı)==True:
+	print("Teşekkürler!!")
+else:
+	print("Kullanıcı alanı boş bırakılmaz.")"""
+
+#-----------------------------------------------
+
+"""kullanıcı_adı=input("Kullanıcı Adınız: ")
+parola=input("Parolanız: ")
+
+if kullanıcı_adı=="aliveli":
+	if parola=="123456789":
+		print("Programa hoşgeldiniz.")
+	else:
+		print("yanlış  parola!")
+else:
+	print("yanlış kullanıcı adı ")"""
+
+#Yukarıdaki kodun daha kısa şekilde yazılmış hali..
+
+"""kullanıcı_adı=input("Kullanıcı adınız: ")
+parola=input("Parolanız: ")
+
+if kullanıcı_adı=="meltem" and parola=="123":
+	print("Programa Hoşgeldiniz!!")
+else:
+	print("Yanlış kullanıcı adı veya parola!!")"""
+	
+
+#------------------------------------
+
+"""x=int(input("Notunuz: "))
+
+if x>100 or x<0:
+	print("Böyle bir not yok")
+elif x>=90 and x<=100:
+	print("A aldınız")
+elif x>=80 and x<=89:
+	print("B aldınız")
+elif x>=70 and x<=79:
+	print("C aldınız")
+elif x>=60 and x<=69:
+	print("D aldınız")
+elif x>=0 and x<=59:
+	print("F aldınız")"""
+
+
+#-------------------------------------------------------
+#not  bool işleci (Bir kümenin değilini almak gibi bir mantık var.)
+"""parola=input("parola girin: ")
+if not parola:
+	print("parola boş bırakılamaz!!" )"""
+
+#-------------------------------------------------------
+#Basit Hesap Makinesi Yapımı
+
+
+#giriş=#"""
+#(1)topla
+#(2)çıkar
+#(3)çarp
+#(4)böl
+#(5)karesini hesapla
+#(6)kare kök hesapla
+#"""
+#print(giriş)
+
+
+#soru=input("Yapmak istediğiniz işelemin numarsını girin: ")
+#if soru=="1":
+#	sayı1=int(input("Toplama işlemi için bir sayı girin: "))
+#	sayı2=int(input("Toplama işlemi için ikinci sayıyı girin: " ))
+#	print(sayı1,"+",sayı2,"=",sayı1+sayı2)
+#elif soru=="2":
+#	sayı3=int(input("Çıkarma işlemi için bir sayı girin: "))
+#	sayı4=int(input("Çıkarma işlemi için ikinci sayıyı girin: " ))
+#	print(sayı3,"-",sayı4,"=",sayı3-sayı4)
+#elif soru=="3":
+#	sayı5=int(input("Çarpma işlemi için bir sayı girin: "))
+#	sayı6=int(input("Çarpma işlemi için ikinci sayıyı girin: " ))
+#	print(sayı5,"*",sayı6,"=",sayı5*sayı6)
+#elif soru=="4":
+#	sayı7=int(input("Bölme işlemi için bir sayı girin: "))
+#	sayı8=int(input("Bölme işlemi için ikinci sayıyı girin: " ))
+#	print(sayı7,"/",sayı8,"=",sayı7/sayı8)
+#elif soru=="5":
+#	sayı9=int(input("Karesini hesaplamak istediğiniz sayıyı buraya girin: "))
+#	print(sayı9,"Sayısının karesi =",sayı9**2)
+#elif soru=="6":
+#	sayı10=int(input("Karekökünü hesaplamak istediğiniz sayıyı buraya girin: "))
+#	print(sayı10,"Sayısının karekökü =",sayı10**0.5)
+#else:
+#	print("Yanlış giriş.")
+#	print("Aşağıdaki seçeneklerden birini giriniz:", giriş)
+
+#----------------------------------------------------------------------------------
+
+#Sürüme Göre İşlem Yapan Program
+
+import sys
+
+_2x_metni="""
+python'ın 2.x sürümlerinden birini kullanıyorsunuz.
+Programı çalıştırmak için sisteminizde python'ın
+3.x sürümlerinden biri kurulu olmalı."""
+
+_3x_metni="Programa hoşgeldiniz."
+
+if "3.0" in sys.version:
+	print(_2_metni)
+else:
+	print(_3x_metni)
